@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { hero } from "@/lib/content";
-import { images } from "@/lib/images";
+import { images, slotStyle } from "@/lib/images";
 import { Star } from "@/lib/icons";
 
 export default function Hero() {
@@ -49,7 +49,7 @@ export default function Hero() {
         <div className="relative">
           <div
             className="aspect-[4/5] w-full rounded-3xl shadow-xl"
-            style={{ background: img.gradient }}
+            style={slotStyle(img)}
             role="img"
             aria-label={img.label}
           />

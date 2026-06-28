@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { advertorial } from "@/lib/content";
-import { images } from "@/lib/images";
+import { images, slotStyle } from "@/lib/images";
 
 export default function Advertorial() {
   return (
@@ -18,7 +18,7 @@ export default function Advertorial() {
 
         <div
           className="my-10 aspect-[16/9] w-full rounded-3xl shadow-lg"
-          style={{ background: images.lifestyle.gradient }}
+          style={slotStyle(images.lifestyle)}
           role="img"
           aria-label={images.lifestyle.label}
         />

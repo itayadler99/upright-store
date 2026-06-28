@@ -7,7 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import Guarantee from "@/components/Guarantee";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import { images } from "@/lib/images";
+import { images, slotStyle } from "@/lib/images";
 import { offer } from "@/lib/content";
 import { Star } from "@/lib/icons";
 
@@ -27,20 +27,20 @@ export default function KitPage() {
             <div className="space-y-4">
               <div
                 className="aspect-square w-full rounded-3xl shadow-lg"
-                style={{ background: images.product.gradient }}
+                style={slotStyle(images.product)}
                 role="img"
                 aria-label={images.product.label}
               />
               <div className="grid grid-cols-2 gap-4">
                 <div
                   className="aspect-[4/3] rounded-2xl"
-                  style={{ background: images.socks.gradient }}
+                  style={slotStyle(images.socks)}
                   role="img"
                   aria-label={images.socks.label}
                 />
                 <div
                   className="aspect-[4/3] rounded-2xl"
-                  style={{ background: images.minerals.gradient }}
+                  style={slotStyle(images.minerals)}
                   role="img"
                   aria-label={images.minerals.label}
                 />
